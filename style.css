@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0 2%;
+  position: sticky;
+  top: 0px;
+}
+
+header div {
+  height: 100%;
+  padding: 2vh 0;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header .checked {
+  color: #3584e4;
+  border-bottom: 2px solid #3584e4;
+  padding-bottom: 0;
+}
+
+header .container__logo {
+  display: flex;
+  align-items: center;
+}
+
+header .container__logo a {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+header .container__nav-menu {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+header .container__extra {
+  display: flex;
+  justify-content: right;
+}
+
+header a:hover {
+  color: #3584e4;
+  border-bottom: 2px solid #3584e4;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+header a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+main {
+  margin: 0 2%;
+}
+
+/* Deixei um template de card, podem apenas reutilizar e mudar o estilo de forma específica em cada página, por favor, alterem somente estilos gerais do card aqui */
+
+main .container__card {
+  font-size: 0.8rem; 
+  height: 52vh;
+  width: 17vw;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: card-retract 0.5s;
+  margin: 2%;
+}
+
+main .container__card a {
+  text-decoration: none;
+  color: black;
+  display: grid;
+  grid-template-rows: 1fr 2fr 0.3fr;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes card-retract {
+  from {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #3584e4;
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0 0 0;
+  }
+}
+
+@keyframes card-expand {
+  from {
+    transform: scale(1);
+    box-shadow: 0 0 0;
+  }
+  to {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #3584e4;
+  }
+}
+
+main .container__card:hover {
+  box-shadow: 0 0 10px #3584e4;
+  cursor: pointer;
+  transform: scale(1.1);
+  animation: card-expand 0.5s;
+}
+
+main .card-image {
+  background-image: url("./source/imgs/images.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .card-content {
+  padding: 0 5%;
+}
+
+main .card-footer {
+  background-color: #1a5fb4;
+}
+
+main .container__big-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 2%;
+  width: 60vw;
+  border-radius: 10px;
+  -webkit-box-shadow: 20px 20px 27px -2px rgba(117,117,117,1);
+  -moz-box-shadow: 20px 20px 27px -2px rgba(117,117,117,1);
+  box-shadow: 20px 20px 27px -2px rgba(117,117,117,1);
+}
+
+main .container__big-card .big-card-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container__big-card .big-card-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+main .container__big-card .big-card-content {
+  margin: 0 2% 0 8%;
+}
+#img1{
+  align-items: center;
+  justify-content: center;
+  display: flex; 
+}
