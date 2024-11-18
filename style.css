@@ -77,7 +77,7 @@ header a {
 }
 
 main {
-  margin: 0 2%;
+  margin: 0 5%;
 }
 
 /* Deixei um template de card, podem apenas reutilizar e mudar o estilo de forma específica em cada página, por favor, alterem somente estilos gerais do card aqui */
@@ -173,7 +173,6 @@ main .container__big-card .big-card-content {
   margin: 0 2% 0 8%;
   font-size: small;
 }
-
 .flex-content {
   display: flex;
   justify-content: space-around;
@@ -187,7 +186,6 @@ main .container__big-card .big-card-content {
   -moz-box-shadow: 5px 5px 5px 5px #555555;
   box-shadow: 5px 5px 5px 5px #555555;
 }
-
 #text1{
   max-width: 60%;
 }
