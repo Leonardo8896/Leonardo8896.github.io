@@ -2,3 +2,15 @@ main .container__cards {
   display: flex;
   justify-content: center;
 }
+
+#card-1 .card-image {
+  background-image: url("../source/imgs/soma.png");
+}
+
+#card-2 .card-image {
+  background-image: url("../source/imgs/multi.png");
+}
+
+#card-3 .card-image {
+  background-image: url("../source/imgs/pot.png");
+}

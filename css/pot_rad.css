@@ -1,0 +1,13 @@
+#rad_rep {
+    height: 40vh;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+}
+
+main .example_equation {
+    display: block;
+    text-align: center;
+}

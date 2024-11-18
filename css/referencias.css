@@ -1,4 +1,15 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 main a {
   text-decoration: none;
   color: black;
+  margin: 1vh 0;
+}
+
+main a:hover {
+  color: #3584e4;
 }

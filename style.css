@@ -82,7 +82,7 @@ main {
 /* Deixei um template de card, podem apenas reutilizar e mudar o estilo de forma específica em cada página, por favor, alterem somente estilos gerais do card aqui */
 
 main .container__card {
-  font-size: 0.8rem; 
+  font-size: 0.5rem;
   height: 52vh;
   width: 17vw;
   border-radius: 10px;
@@ -173,4 +173,13 @@ main .container__big-card .big-card-content {
   align-items: center;
   justify-content: center;
   display: flex; 
+}
+
+footer {
+  background-color: #333333;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.2fr;
+  color: white;
+  margin: 1vh 0;
+  padding: 0 2vw;
 }
